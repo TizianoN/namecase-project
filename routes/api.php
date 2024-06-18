@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\PrimeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+  return $request->user();
 });
+
+Route::get('/next-prime/{user_number}', [PrimeController::class, 'nextPrime']);
+Route::get('/prev-prime/{user_number}', [PrimeController::class, 'prevPrime']);
+Route::get('/primes-between/{min_number}/{max_number}', [PrimeController::class, 'primesBetween']);
