@@ -80,8 +80,8 @@
             <span class="code-method">
               GET
             </span>
-            <a href="https://namecase-project.tizianonicolai.com/api/primes-betweem/50/100" target="_blank">
-              https://namecase-project.tizianonicolai.com/api/primes-betweem/{min_number}/{max_number}
+            <a href="https://namecase-project.tizianonicolai.com/api/primes-between/50/100" target="_blank">
+              https://namecase-project.tizianonicolai.com/api/primes-between/{min_number}/{max_number}
             </a>
           </code>
         </div>
