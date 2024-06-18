@@ -25,6 +25,9 @@ code {
     color: #ef4444;
     border-radius: 15px;
     font-size: 1rem;
+    white-space: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
 }
 
 code a {
