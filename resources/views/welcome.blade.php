@@ -41,8 +41,9 @@
           class="mt-16 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
 
           <h3 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Previous Prime Number</h3>
-          <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Restituisce il numero primo
-            precedente più vicino al parametro fornito</p>
+          <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            Returns the previous prime number closest to the given parameter
+          </p>
           <code class="mt-6">
             <span class="code-method">
               GET
@@ -56,8 +57,9 @@
         <div
           class="mt-16 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
           <h3 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Next Prime Number</h3>
-          <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Restituisce il numero primo
-            successivo più vicino al parametro fornito</p>
+          <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            Returns the next prime number closest to the given parameter
+          </p>
           <code class="mt-6">
             <span class="code-method">
               GET
@@ -71,8 +73,9 @@
         <div
           class="mt-16 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
           <h3 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Primes Between</h3>
-          <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">Restituisce la lista di numeri primi
-            compresa nel range specificato</p>
+          <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+            Returns the list of prime numbers within the specified range
+          </p>
           <code class="mt-6">
             <span class="code-method">
               GET
