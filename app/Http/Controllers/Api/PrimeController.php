@@ -10,8 +10,11 @@ class PrimeController extends Controller
   /**
    * Returns next prime number.
    */
-  public function nextPrime(int $user_number)
+  public function nextPrime($user_number)
   {
+    if (is_int($user_number))
+      return response()->json(['error' => 'Given param is not an integer number'], 500);
+
     $applicantPrime = $user_number + 1;
 
     while (!$this->isPrime($applicantPrime))
@@ -23,8 +26,11 @@ class PrimeController extends Controller
   /**
    * Returns previous prime number. If none is found returns false
    */
-  public function prevPrime(int $user_number)
+  public function prevPrime($user_number)
   {
+    if (is_int($user_number))
+      return response()->json(['error' => 'Given param is not an integer number'], 500);
+
     $applicantPrime = $user_number - 1;
 
     if ($applicantPrime < 2) {
@@ -38,10 +44,13 @@ class PrimeController extends Controller
   }
 
   /**
-   * Returns previous prime number. If none is found returns false
+   * Returns all primes in a range
    */
-  public function primesBetween(int $min_number, int $max_number)
+  public function primesBetween($min_number, $max_number)
   {
+    if (is_int($min_number) || $max_number)
+      return response()->json(['error' => 'Given params are not integer numbers'], 500);
+
     $primes = [];
 
     for ($i = $min_number; $i < $max_number; $i++) {
